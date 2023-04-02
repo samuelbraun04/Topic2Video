@@ -2,6 +2,10 @@
 
 Topic2Video is a Python application that generates a video based on a user-inputted topic. The project utilizes natural language processing (NLP) and machine learning (ML) algorithms to analyze and synthesize information about the topic and then generate a video essay. The resulting video provides a concise, engaging, and informative overview of the topic.
 
+## Demo
+
+[![IMAGE ALT TEXT HERE](https://www.shareicon.net/download/2015/09/08/97834_video.ico)](https://youtu.be/RbDPELBA5kI)
+
 ## Requirements
 
 - Python 3.6 or higher
