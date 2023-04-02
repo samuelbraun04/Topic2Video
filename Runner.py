@@ -1,7 +1,7 @@
 from TopicToVideo import TopicToVideo
 
 #create instance of TopicToVideo
-runner = TopicToVideo('OPEN_API_KEY')
+runner = TopicToVideo('OPEN_API_KEY', 'AWS_ACCESS', 'AWS_SECRET')
 
 #clean the working directories
 runner.cleanDirectories()

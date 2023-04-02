@@ -1,0 +1,7 @@
+boto3==1.24.61
+icrawler==0.6.6
+moviepy==2.0.0.dev2_
+numpy==1.21.6
+openai==0.27.2
+Pillow==9.5.0
+pydub==0.25.1

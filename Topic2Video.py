@@ -13,9 +13,9 @@ from time import sleep
 import openai
 import textwrap
 
-class TopicToYoutube:
+class Topic2Video:
 
-    def __init__(self, OPEN_API_KEY):
+    def __init__(self, OPEN_API_KEY, AWS_ACCESS, AWS_SECRET):
         
         self.OPEN_API_KEY = OPEN_API_KEY
 
@@ -25,16 +25,13 @@ class TopicToYoutube:
         self.WORKSPACE_PATH = self.OVERALL_DIRECTORY+'Workspace'+self.CONJOINER
         self.IMAGES_PATH = self.WORKSPACE_PATH+'Images'+self.CONJOINER
         self.AUDIO_PATH = self.WORKSPACE_PATH+'Audio'+self.CONJOINER
-        self.AWS_PATH = self.OVERALL_DIRECTORY+'AWS'+self.CONJOINER
 
         self.FONT = self.INGREDIENTS_PATH+'RobotoSerifMedium.ttf'
         self.MUSIC_PATH = self.INGREDIENTS_PATH+'Music'+self.CONJOINER
         self.LIST_OF_TOPICS = self.INGREDIENTS_PATH+'listOfTopics.txt'
-        
-        KEY_ID = open(self.AWS_PATH+'aws_access.txt').read()
-        SECRET_ID = open(self.AWS_PATH+'aws_secret.txt').read()
-        self.polly = client('polly', region_name='us-east-1', aws_access_key_id=KEY_ID , aws_secret_access_key=SECRET_ID)
-        self.s3client = client('s3', aws_access_key_id=KEY_ID, aws_secret_access_key=SECRET_ID)
+
+        self.polly = client('polly', region_name='us-east-1', aws_access_key_id=AWS_ACCESS , aws_secret_access_key=AWS_SECRET)
+        self.s3client = client('s3', aws_access_key_id=AWS_ACCESS, aws_secret_access_key=AWS_SECRET)
 
     def chatGPT(self, prompt, chosenTemperature=1):
 
