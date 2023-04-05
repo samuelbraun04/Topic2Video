@@ -4,7 +4,7 @@ Topic2Video is a Python application that generates a video based on a user-input
 
 ## Demo
 
-[![IMAGE ALT TEXT HERE](https://www.shareicon.net/download/2015/09/08/97834_video.ico)](https://youtu.be/RbDPELBA5kI)
+[![IMAGE ALT TEXT HERE](https://www.shareicon.net/download/2015/09/08/97834_video.ico)](https://www.youtube.com/watch?v=MuKA_wXI9_c&ab_channel=SamuelB.)
 
 ## Requirements
 
